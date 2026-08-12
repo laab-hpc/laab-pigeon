@@ -1,6 +1,10 @@
 # LAAB-Pigeon
 
-**Pigeon** enables **secure, token-based uploads** of data between web-application storage and their users. This repository contains the following  three independently installable software components.
+*Current version: 0.1.0*
+
+**Pigeon** enables **secure, token-based uploads** of data between web-application storage and their clients. The software package was developed to serve as a component of the LAAB framework. 
+
+This repository contains the following  three independently installable software components.
 
 - `pigeon-client` — a CLI for the users to interact with the web-application storage.
 - `pigeon-server` — a Flask API that serves as an intermediate layer that handles the token-based communication between the client and the web-application storage.
@@ -58,11 +62,12 @@ The typical workflow for a user uploading data using `pigeon` is as follows:
 
 An end-to-end example with all three components is available here: [End-to-End Example: `pigeon`](example/README.md)
 
+## Acknowledgement
+
+This work was developed as a component of the LAAB framework which was partially supported by the eSSENCE Programme under the Swedish Government’s Strategic Research Initiative, the Juelich Supercomputing Center at Forschungszentrum Jeulich, Germany through the BMBF project 01-1H1-6013 AP6-NRW Anwenderunterst ̈utzung SiVeGCS, and RWTH Aachen University, Germany through the DFG project IRTG-2379. 
+
 ## Copyright and License
 
-Copyright (c) 2026 Forschungszentrum Juelich GmbH, Juelich Supercomputing Centre
+Copyright (c) 2026 Aravind Sankaran
 
-Contributers: 
-    - Aravind Sankaran
-
-This software is licensed under the BSD 3-Clause License. See [LICENSE](LICENSE) for details.
+This is open-source software distributed under the BSD 3-Clause (Revised) License. For more information, please see the LICENSE file in the project's root directory.
