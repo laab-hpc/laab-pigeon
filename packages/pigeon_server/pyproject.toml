@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pigeon-server"
+version = "0.1.0"
+description = "Pigeon enables data exchange between client applications and a disptach application via secured intermediate server. This package provides the server component of pigeon"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [
+    { name = "Aravind Sankaran", email = "a.sankaran@fz-juelich.de" }
+]
+
+requires-python = ">3"
+
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+dependencies = [
+    "flask>=2.3",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7",
+]
+
+[project.scripts]
+pigeon-server = "pigeon_server.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pigeon_server*"]

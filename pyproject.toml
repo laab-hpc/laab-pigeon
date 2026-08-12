@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pigeon"
+version = "0.1.0"
+description = "Pigeon enables data exchange between client applications and a disptach application via secured intermediate server."
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [
+    { name = "Aravind Sankaran", email = "a.sankaran@fz-juelich.de" }
+]
+
+requires-python = ">3"
+
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+dependencies = [
+  "pigeon-client @ file:./packages/pigeon_client",
+]
+
+[project.optional-dependencies]
+server = ["pigeon-server @ file:./packages/pigeon_server"]
+dispatch = ["pigeon-dispatch @ file:./packages/pigeon_dispatch"]
+all = [
+  "pigeon-server @ file:./packages/pigeon_server",
+  "pigeon-dispatch @ file:./packages/pigeon_dispatch",
+]
+
+[tool.setuptools]
+packages = []

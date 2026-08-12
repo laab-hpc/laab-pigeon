@@ -1,0 +1,115 @@
+# ==============================
+# Python bytecode / cache
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==============================
+# Virtual environments
+# ==============================
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# ==============================
+# Build / packaging artifacts
+# ==============================
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# PEP 517/518 build backend artifacts
+__pypackages__/
+
+# ==============================
+# Installer logs
+# ==============================
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==============================
+# Unit test / coverage
+# ==============================
+.coverage
+.coverage.*
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# ==============================
+# mypy / type checking
+# ==============================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ==============================
+# Ruff / linters
+# ==============================
+.ruff_cache/
+
+# ==============================
+# IDE / Editor
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==============================
+# OS files
+# ==============================
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Logs
+# ==============================
+*.log
+
+# ==============================
+# Temporary files
+# ==============================
+tmp/
+*.tmp
+*.bak
+
+# ==============================
+# Local development configs
+# ==============================
+.env.local
+.env.*.local
+
+# ==============================
+# Dispatch test backend state
+# ==============================
+state.json
+*.bin
+
+# ==============================
+# Coverage reports
+# ==============================
+coverage.xml
+
+# ==============================
+# Jupyter notebooks (optional)
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# PyInstaller
+# ==============================
+*.spec
+
+# ==============================
+# Mac/Linux executable bits
+# ==============================
+*.out
